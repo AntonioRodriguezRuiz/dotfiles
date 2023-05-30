@@ -85,7 +85,7 @@ element-text {
     text-color:                  inherit;
     cursor:                      inherit;
     vertical-align:              0.5;
-    horizontal-align:            0.4;
+    horizontal-align:            0.5;
 }
 element selected.normal {
     background-image:            linear-gradient(to right, #00FFAF, #9032FF);
