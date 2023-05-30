@@ -98,6 +98,7 @@ button:hover {
     -gtk-icon-effect: highlight;
 }
 
+#window,
 #clock,
 #battery,
 #cpu,
