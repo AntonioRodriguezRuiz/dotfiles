@@ -1,0 +1,92 @@
+/*****----- Configuration -----*****/
+configuration {
+    show-icons:                 false;
+}
+
+/*****----- Global Properties -----*****/
+* {
+    /* Resolution : 1920x1080 */
+    message-border-radius:       12px;
+    listview-spacing:            25px;
+    element-padding:             35px 0px;
+    element-border-radius:       60px;
+
+    element-text-font:           "feather 50";
+
+    background-normal:           white/5%;
+    background-selected:         white/15%;
+    foreground-normal:           white;
+    foreground-selected:         white;
+}
+
+/*****----- Main Window -----*****/
+window {
+    transparency:                "real";
+    location:                    center;
+    anchor:                      center;
+    fullscreen:                  false;
+    width:                       600px;
+    border-radius:               10px;
+    cursor:                      "default";
+    background-image:		 linear-gradient(to bottom, #00FFAF, #9032FF);
+}
+
+/*****----- Main Box -----*****/
+mainbox {
+    enabled:                     true;
+    padding:			 20px;
+    margin:                      2px;
+    border-radius:		 10px;
+    background-color:            rgba(73, 73, 73, 0.95);
+    children:                    [ "dummy", "inputbar", "listview", "dummy" ];
+}
+
+/*****----- Inputbar -----*****/
+inputbar {
+    enabled:                     true;
+    background-color:            transparent;
+    children:                    [ "dummy"];
+}
+
+dummy {
+    background-color:            transparent;
+}
+/*****----- Listview -----*****/
+listview {
+    enabled:                     true;
+    expand:                      false;
+    columns:                     3;
+    lines:                       1;
+    cycle:                       true;
+    dynamic:                     true;
+    scrollbar:                   false;
+    layout:                      vertical;
+    reverse:                     false;
+    fixed-height:                true;
+    fixed-columns:               true;
+    
+    spacing:                     var(listview-spacing);
+    background-color:            transparent;
+    cursor:                      "default";
+}
+
+/*****----- Elements -----*****/
+element {
+    enabled:                     true;
+    padding:                     35px 0px;
+    border-radius:               10px;
+    background-color:            transparent;
+    text-color:                  white;
+    cursor:                      pointer;
+}
+element-text {
+    font:                        var(element-text-font);
+    background-color:            transparent;
+    text-color:                  inherit;
+    cursor:                      inherit;
+    vertical-align:              0.5;
+    horizontal-align:            0.4;
+}
+element selected.normal {
+    background-image:            linear-gradient(to right, #00FFAF, #9032FF);
+}
