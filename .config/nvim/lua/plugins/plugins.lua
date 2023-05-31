@@ -33,6 +33,7 @@ return require('packer').startup(function(use)
     use 'navarasu/onedark.nvim'
     use { 'nvim-treesitter/nvim-treesitter', run = ":TSUpdate" }
     use 'neovim/nvim-lspconfig'
+    use 'folke/which-key.nvim'
 
     --Extensions
     use 'windwp/nvim-ts-autotag'

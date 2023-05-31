@@ -4,7 +4,6 @@ local keymap = vim.api.nvim_set_keymap
 -- Space as leader key
 keymap("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
-vim.g.mapocalleader = " "
 
 -- Normal Mode
 keymap("n", "<C-h>", "<C-w>h", opts)
@@ -27,10 +26,6 @@ keymap("n", "<A-h>", ":BufferLineMovePrev<CR>", opts)
 
 keymap("n", "<C-w>", ":bd<CR>", opts)
 
--- Leader keybinds
-keymap("n", "<leader>w", ":w<cr>", opts)
-keymap("n", "<leader>e", ":NvimTreeToggle<CR>", opts)
-
 -- Instert Mode
 keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
@@ -40,7 +35,3 @@ keymap("x", "<A-j>", ":move '>+1<CR>gv-gv", opts)
 keymap("x", "<A-k>", ":move '<-2<CR>gv-gv", opts)
 keymap("v", "<", "<gv", opts)
 keymap("v", ">", ">gv", opts)
-
--- Telescope
-keymap("n", "<leader>f", ":Telescope find_files<CR>", opts)
-keymap("n", "<leader>g", ":Telescope live_grep<CR>", opts)
