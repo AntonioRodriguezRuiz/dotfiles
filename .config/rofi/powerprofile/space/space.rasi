@@ -11,7 +11,7 @@ configuration {
     element-padding:             35px 0px;
     element-border-radius:       60px;
 
-    element-text-font:           "feather 50";
+    element-text-font:           "Hack 50";
 
     background-normal:           white/5%;
     background-selected:         white/15%;
@@ -85,7 +85,7 @@ element-text {
     text-color:                  inherit;
     cursor:                      inherit;
     vertical-align:              0.5;
-    horizontal-align:            0.5;
+    horizontal-align:            0.45;
 }
 element selected.normal {
     background-image:            linear-gradient(to right, #00FFAF, #9032FF);
