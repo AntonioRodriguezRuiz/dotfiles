@@ -1,7 +1,7 @@
 * {
     /* `otf-font-awesome` is required to be installed for icons */
-    font-family: FontAwesome, Roboto;
-    font-size: 14px;
+    font-family: 'M+1 Nerd Font';
+    font-size: 13px;
     font-weight: bold;
     color: #ffffff;
     min-height:30px;
@@ -79,6 +79,7 @@ button:hover {
 }
 
 #window {
+    font-size: 15px;
     background-color: rgba(43, 48, 59, 0.0);
 }
 
