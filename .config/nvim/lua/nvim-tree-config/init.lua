@@ -1,6 +1,3 @@
--- following options are the default
--- each of these are documented in `:help nvim-tree.OPTION_NAME`
-
 local status_ok, nvim_tree = pcall(require, "nvim-tree")
 if not status_ok then
     return
@@ -60,7 +57,7 @@ nvim_tree.setup {
             show = {
                 file = true,
                 folder = true,
-                folder_arrow = true,
+                folder_arrow = false,
                 git = true,
             },
             glyphs = {
@@ -83,6 +80,17 @@ nvim_tree.setup {
                     symlink = "",
                 },
             }
+        },
+        indent_markers = {
+            enable = true,
+            inline_arrows = false,
+            icons = {
+                corner = "└",
+                edge = "│",
+                item = "│",
+                bottom = "─",
+                none = " ",
+            },
         }
     }
 }
