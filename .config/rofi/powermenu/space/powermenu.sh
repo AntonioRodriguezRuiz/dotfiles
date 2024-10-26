@@ -40,10 +40,10 @@ case ${chosen} in
 	    systemctl reboot
         ;;
     $lock)
-	    swaylock
+	    hyprlock
         ;;
     $suspend)
-	    systemctl suspend; swaylock
+	    systemctl suspend; hyprlock
         ;;
     $logout)
 	    hyprctl dispatch exit

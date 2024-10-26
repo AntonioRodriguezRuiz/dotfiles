@@ -19,7 +19,7 @@ window {
     fullscreen:                  false;
     width:                       500px;
     x-offset:                    10px;
-    y-offset:                    357px;
+    y-offset:                    10px;
     background-image:            linear-gradient(to bottom, #00FFAF, #9032FF);
 
     /* properties for all widgets */
