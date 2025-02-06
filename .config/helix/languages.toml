@@ -1,0 +1,42 @@
+# Pyton
+[[language]]
+name = "python"
+language-servers = ["pylsp", "ruff-lsp"]
+auto-format = true
+
+[language-server.pylsp.config.pylsp]
+plugins.pylsp_mypy.enabled = true
+plugins.pylsp_mypy.live_mode = true
+plugins.ruff.enabled = true
+
+[language-server.ruff-lsp]
+command = "ruff-lsp"
+args = ["server"]
+
+# Rust
+[language-server.rust-analyzer.config.check]
+command = "clippy"
+
+[language-server.rust-analyzer.config.cargo]
+features = "all"
+
+# JS / TS
+[[language]]
+name = "javascript"
+language-servers = [
+  "typescript-language-server", # optional
+  "vscode-eslint-language-server",
+]
+
+[[language]]
+name = "typescript"
+language-servers = [
+  "typescript-language-server",
+  "vscode-eslint-language-server",
+]
+
+# Elixir
+[[language]]
+name = "elixir"
+auto-format = true
+diagnostic-severity = "Hint"

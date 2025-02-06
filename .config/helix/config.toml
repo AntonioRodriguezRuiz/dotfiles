@@ -1,0 +1,46 @@
+theme = "catppuccin_mocha"
+
+[editor]
+bufferline = "multiple"
+line-number = "relative"
+true-color = true
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.file-picker]
+hidden = false
+
+[editor.lsp]
+display-inlay-hints = true
+
+[editor.statusline]
+left = ["mode", "spinner", "file-name"]
+right = ["diagnostics", "selections", "position", "file-encoding", "file-line-ending", "file-type"]
+separator = "|"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+# [editor.inline-diagnostics]
+# cursor-line = "error"
+
+# Keybinds
+[keys.normal]
+# Quick iteration on config changes
+C-r = ":config-reload"
+# Muscle mem.
+0 = "goto_line_start"
+G = "goto_file_end"
+V = ["select_mode", "extend_to_line_bounds"]
+
+[keys.select]
+# Muscle memory
+0 = "goto_line_start"
+G = "goto_file_end"
+u = ["switch_to_lowercase", "collapse_selection", "normal_mode"]
+U = ["switch_to_uppercase", "collapse_selection", "normal_mode"]
+
