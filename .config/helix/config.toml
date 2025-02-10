@@ -1,10 +1,13 @@
 theme = "catppuccin_mocha"
 
 [editor]
-bufferline = "multiple"
 line-number = "relative"
 true-color = true
 color-modes = true
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "hint"
 
 [editor.cursor-shape]
 insert = "bar"
@@ -43,4 +46,3 @@ V = ["select_mode", "extend_to_line_bounds"]
 G = "goto_file_end"
 u = ["switch_to_lowercase", "collapse_selection", "normal_mode"]
 U = ["switch_to_uppercase", "collapse_selection", "normal_mode"]
-

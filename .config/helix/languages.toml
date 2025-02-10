@@ -39,4 +39,4 @@ language-servers = [
 [[language]]
 name = "elixir"
 auto-format = true
-diagnostic-severity = "Hint"
+diagnostic-severity = "hint"
